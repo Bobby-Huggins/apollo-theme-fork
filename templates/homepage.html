@@ -5,7 +5,7 @@
     <article>
         <section class="body">
             {% if section.title %}
-                {{<post.page_header title={section.title} />}}
+                {{<post.page_header title={section.title | safe} />}}
             {% endif %}
             {{ section.content | safe }}
         </section>

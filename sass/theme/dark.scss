@@ -10,6 +10,8 @@ $bg-2: lighten($bg-1, 10%);
 $text-0: #daf0fb;
 $text-1: #91d2f3;
 $text-2: #5abced;
+$hl-0: #3dfe82;
+$hl-1: lighten($hl-0, 0%);
 
 :root.dark {
   --text-0: #{$text-0};
@@ -23,7 +25,8 @@ $text-2: #5abced;
   --border-color: var(--bg-2);
 
 //  --primary-color: #ef5350;
-  --primary-color: #3dfe82;
+  --primary-color: #{$hl-0};
+  --highlight-color: #{$hl-1};
   --hover-color: #010b14;
 
   --icon-filter: invert(1);
